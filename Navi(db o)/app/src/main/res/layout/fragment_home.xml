@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leejaeyun.bikenavi2.NaviActivity"
+    android:clickable="true"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation = "vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/mapLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="vertical">
+
+            <!--현위치-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_nowLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/current_place"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_findroad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/mini_bike"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini" />
+
+
+            <!--경로 취소-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_deletePath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/map_clear"
+                app:backgroundTint="@color/orange"
+                app:fabSize="mini"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
